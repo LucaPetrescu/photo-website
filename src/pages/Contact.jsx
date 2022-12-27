@@ -1,9 +1,7 @@
-import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { MdAlternateEmail } from "react-icons/md";
 import { BsTelephoneFill } from "react-icons/bs";
 import { GrInstagram, GrFacebook } from "react-icons/gr";
-import ImageData from "../components/ImageData";
 import "../styles/Navbar.css";
 import "../styles/Contact.css";
 
@@ -31,7 +29,7 @@ function Contact() {
           <p>Luca Petrescu</p>
         </div>
       </div>
-      <Footer />
+      
     </>
   );
 }

@@ -17,6 +17,7 @@ body {
 
 .bg-header {
     background-color: rgba(0, 0, 0, .9);
+    color: antiquewhite;
 }
 
 .header .navbar {
@@ -31,6 +32,10 @@ body {
 
 .header .nav-menu a {
     color: #000000;
+    text-decoration: none;
+}
+
+.header .nav-menu .logo{
     text-decoration: none;
 }
 

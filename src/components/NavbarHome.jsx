@@ -14,7 +14,7 @@ function Navbar() {
     <>
       <div className="header-home">
         <nav className="navbar-home">
-          <a href="/">Luca's</a>
+          <a href="/">Luca Petrescu</a>
           <div className="hamburger-home" onClick={handleClick}>
             {click ? (
               <FaTimes size={30} style={{ color: "#ffffff" }} />
@@ -29,9 +29,9 @@ function Navbar() {
               </a>
             </li>
             <li className="nav-item-home">
-              <a href="#about" onClick={closeMenu}>
+              <Link to="/about" onClick={closeMenu}>
                 About Me
-              </a>
+              </Link>
             </li>
             <li className="nav-item-home">
               <Link to="/gallery" className="nav-item-home" onClick={closeMenu}>

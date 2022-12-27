@@ -23,4 +23,29 @@ import img22 from "../photos/img22.jpg";
 import img23 from "../photos/img23.jpg";
 import img24 from "../photos/img24.jpg";
 
-export const ImageData = [{ img: img1 }, { img: img2 }];
+export const ImageData = [
+    { img: img1 }, 
+    { img: img2 }, 
+    { img: img3 }, 
+    { img: img4 }, 
+    { img: img5 }, 
+    { img: img6 }, 
+    { img: img7 }, 
+    { img: img8 }, 
+    { img: img9 }, 
+    { img: img10 }, 
+    { img: img11 }, 
+    { img: img12 },
+    { img: img13 }, 
+    { img: img14 }, 
+    { img: img15 }, 
+    { img: img16 }, 
+    { img: img17 }, 
+    { img: img18 }, 
+    { img: img19 }, 
+    { img: img20 }, 
+    { img: img21 }, 
+    { img: img22 }, 
+    { img: img23 }, 
+    { img: img24 }
+];

@@ -8,13 +8,24 @@ function Navbar() {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
 
+  const [color, setColor] = useState(false)
+  const changeColor = () => {
+    if(window.scrollY >=90 ){
+      setColor(true)
+    }else{
+      setColor(false)
+    }
+  }
+
+  window.addEventListener('scroll', changeColor)
+
   const closeMenu = () => setClick(false);
 
   return (
     <>
-      <div className="header">
+      <div className={color ? 'header bg-header':'header'}>
         <nav className="navbar">
-          <a href="/">Luca's</a>
+          <a href="/" className="logo">Luca Petrescu</a>
           <div className="hamburger" onClick={handleClick}>
             {click ? (
               <FaTimes size={30} style={{ color: "#ffffff" }} />
@@ -29,19 +40,16 @@ function Navbar() {
               </a>
             </li>
             <li className="nav-item">
-              <a href="#about" onClick={closeMenu}>
+              <Link to='/about'>
                 About Me
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a href="#testimonials" onClick={closeMenu}>
+            <Link to="/gallery" className="nav-item" onClick={closeMenu}>
                 Gallery
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              {/* <a href="#demo" onClick={closeMenu}>
-                Contact
-              </a> */}
               <Link to="/contact" className="nav-item" onClick={closeMenu}>
                 Contact
               </Link>
