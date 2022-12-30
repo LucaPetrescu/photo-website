@@ -17,7 +17,7 @@ body {
 
 .bg-header {
     background-color: rgba(0, 0, 0, .9);
-    color: antiquewhite;
+    color: rgb(255, 255, 255);
 }
 
 .header .navbar {
